@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.dehaze),
+            icon: Icon(Icons.dehaze_rounded),
             color: warna.wHitamColor,
           )
         ],
