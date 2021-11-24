@@ -92,20 +92,44 @@ class Home extends StatelessWidget {
                 ),
               ),
               Column(
-                children: [Text("0.000"), Text("Posts")],
+                children: [
+                  Text(
+                    "0.000",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  Text("Posts")
+                ],
               ),
               Column(
-                children: [Text("0.000"), Text("Followers")],
+                children: [
+                  Text(
+                    "0.000",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  Text("Followers")
+                ],
               ),
               Column(
-                children: [Text("0.000"), Text("Following")],
+                children: [
+                  Text(
+                    "0.000",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  Text("Following")
+                ],
               ),
             ],
           ),
           SizedBox(
-            height: 20,
+            height: 15,
           ),
-          Text("Username"),
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: Text(
+              "Username",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+            ),
+          ),
         ],
       ),
     );
