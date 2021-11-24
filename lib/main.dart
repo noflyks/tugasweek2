@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'color.dart';
+import 'color.dart' as warna;
 
 void main() {
   runApp(const MyApp());
@@ -24,17 +24,17 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: wPutihColor,
+        backgroundColor: warna.wPutihColor,
         title: Row(
           children: [
             Text(
               "Instagram",
-              style: TextStyle(color: wHitamColor),
+              style: TextStyle(color: warna.wHitamColor),
             ),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.arrow_drop_down_sharp),
-              color: wHitamColor,
+              color: warna.wHitamColor,
             )
           ],
         ),
@@ -42,12 +42,12 @@ class Home extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.control_point_outlined),
-            color: wHitamColor,
+            color: warna.wHitamColor,
           ),
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.dehaze),
-            color: wHitamColor,
+            color: warna.wHitamColor,
           )
         ],
       ),
@@ -68,7 +68,7 @@ class Home extends StatelessWidget {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: wMerahColor,
+                        color: warna.wMerahColor,
                         borderRadius: BorderRadius.circular(100),
                       ),
                     ),
