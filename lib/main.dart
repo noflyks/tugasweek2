@@ -127,7 +127,7 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20),
             child: Text(
               "Username",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
         ],
