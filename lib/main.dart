@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'color.dart' as warna;
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +22,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //biar warna appbar dan scafold sama
+      backgroundColor: warna.wPutihColor,
       appBar: AppBar(
+        //tambahin ini buat ngilangin shadow
+        elevation: 0,
         backgroundColor: warna.wPutihColor,
         title: Row(
           children: [
@@ -51,12 +54,15 @@ class Home extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      //buat sebagai lisview ajah
+      body: ListView(
         children: [
-          SizedBox(
-            height: 15,
-          ),
+          // gaperlu ini kejauhan jaraknya
+          // SizedBox(
+          //   height: 15,
+          // ),
+
+          // ini sudah bagus bang
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -130,6 +136,8 @@ class Home extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
+
+          // Belum Selesai ...
         ],
       ),
     );
